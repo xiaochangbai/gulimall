@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: gulimall-auth-server
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.56.101:8848
+        namespace: 12405f4f-202e-460c-a3a3-8e6815b2c9bd
+
+

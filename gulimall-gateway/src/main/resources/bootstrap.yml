@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: gulimall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.56.101:8848
+      config:
+        server-addr: 192.168.56.101:8848
+#        file-extension: yml
+        namespace: 2debdcd7-804c-4516-8f96-39116db88ce0

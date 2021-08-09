@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: gulimall-search
+
+  cloud:
+    nacos:
+      config:
+        server-addr: 192.168.56.101:8848
+        namespace: b9a9ffd9-6a11-4cd7-8849-244aeb0db455
+
+
