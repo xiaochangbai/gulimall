@@ -1,37 +1,74 @@
-## Welcome to GitHub Pages
+# 谷粒商城简介
 
-You can use the [editor on GitHub](https://github.com/xchb-null/gulimall/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### 项目介绍
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+gulimall（谷粒商城） 项目是一套电商项目，包括前台商城系统以及后台管理系统，基于 SpringCloud + SpringCloudAlibaba + MyBatis-Plus实现，采用 Docker 容器化部署。前台商城系统包括：用户登录、注册、商品搜索、商品详情、购物车、下订单流程、秒杀活动等模块。后台管理系统包括：系统管理、商品系统、优惠营销、库存系统、订单系统、用户系统、内容管理等七大模块。
 
-### Markdown
+[在线演示](./md/demo.md)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[环境搭建-基础](./md/谷粒商城—分布式基础.md) -
+[环境搭建-分布式](./md/谷粒商城—分布式高级.md) -
+[环境搭建-集群](./md/谷粒商城—高可用集群.md)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+### 组织结构
 
-- Bulleted
-- List
+```
+gulimall
+├── gulimall-admin  后台管理系统
+├── gulimall-admin-vue 后台管理系统前端
+├── gulimall-auth-server -- 认证中心（社交登录、OAuth2.0、单点登录）
+├── gulimall-cart -- 购物车服务
+├── gulimall-codegenerator -- 项目的代码生成器
+├── gulimall-common -- 工具类及通用代码
+├── gulimall-coupon -- 优惠卷服务
+├── gulimall-gateway -- 统一配置网关
+├── gulimall-member -- 会员服务
+├── gulimall-order -- 订单服务
+├── gulimall-product -- 商品服务
+├── gulimall-search -- 检索服务
+├── gulimall-seckill -- 秒杀服务
+├── gulimall-third-party -- 第三方服务
+└── gulimall-ware -- 仓储服务
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### 架构图
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/xchb-null/gulimall/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+**系统架构图**
 
-### Support or Contact
+[![UUvRAS.png](https://images.gitee.com/uploads/images/2020/0714/193425_4a1056c4_4914148.png)](https://imgchr.com/i/UUvRAS)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+
+
+### 技术选型
+
+**后端技术**
+
+|        技术        |           说明           |
+| :----------------: | :----------------------: | 
+|     SpringBoot     |       容器+MVC框架       |    
+|    SpringCloud     |        微服务架构        |  
+| SpringCloudAlibaba |        一系列组件        |
+|    MyBatis-Plus    |         ORM框架          |
+|   Elasticsearch    |         搜索引擎         | 
+|      RabbitMQ      |         消息队列         | 
+|   Springsession    |        分布式缓存        | 
+|      Redisson      |         分布式锁         | 
+|       Docker       |       应用容器引擎       | 
+|        Minio       |        对象云存储        |
+|   swagger+knife4j  |        接口文档        |
+
+**前端技术**
+
+|   技术    |    说明    |           官网            |
+| :-------: | :--------: | :-----------------------: |
+|    Vue    |  前端框架  |     https://vuejs.org     |
+|  Element  | 前端UI框架 | https://element.eleme.io  |
+| thymeleaf |  模板引擎  | https://www.thymeleaf.org |
+|  node.js  | 服务端的js |   https://nodejs.org/en   |
+
+### 如果你喜欢，要是觉得对你有帮助的话，请点个赞是对我最大的支持！
+
+
