@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.xunqi.gulimall</groupId>
+    <groupId>com.xchb.gulimall</groupId>
     <artifactId>gulimall</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>gulimall</name>
@@ -17,7 +17,7 @@
         <module>gulimall-order</module>
         <module>gulimall-product</module>
         <module>gulimall-ware</module>
-        <module>renren-generator</module>
+        <module>gulimall-codegenerator</module>
         <module>gulimall-common</module>
         <module>gulimall-third-party</module>
         <module>gulimall-search</module>
@@ -26,7 +26,7 @@
         <module>gulimall-test-sso-client</module>
         <module>gulimall-test-sso-server</module>
         <module>gulimall-seckill</module>
-        <module>renren-fast</module>
+        <module>gulimall-admin</module>
     </modules>
 
 

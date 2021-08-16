@@ -19,6 +19,12 @@ spring:
         dashboard: 192.168.56.101:8080
 
   redis:
+    lettuce:
+      pool:
+        max-active: 500
+        max-wait: 500
+        max-idle: 500
+        min-idle: 0
     host: 192.168.56.101
     port: 6379
 

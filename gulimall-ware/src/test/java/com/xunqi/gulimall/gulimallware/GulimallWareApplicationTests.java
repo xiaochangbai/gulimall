@@ -1,4 +1,4 @@
-package com.xunqi.gulimall.gulimallware;
+package com.xchb.gulimall.gulimallware;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
